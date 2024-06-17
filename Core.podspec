@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Core"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Core Library"
   spec.description  = <<-DESC
   Commons files across the Application.

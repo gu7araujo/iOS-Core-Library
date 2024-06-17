@@ -12,11 +12,11 @@ public enum CoordinatorType {
     case tab, journey1, journey2, journey3, journey4
 }
 
-protocol CoordinatorFinishDelegate: AnyObject {
+public protocol CoordinatorFinishDelegate: AnyObject {
     func coordinatorDidFinish(childCoordinator: CoordinatorProtocol)
 }
 
-protocol CoordinatorProtocol: AnyObject {
+public protocol CoordinatorProtocol: AnyObject {
     var finishDelegate: CoordinatorFinishDelegate? { get set }
     var navigationController: UINavigationController { get set }
     var childCoordinators: [CoordinatorProtocol] { get set }
@@ -30,7 +30,7 @@ protocol CoordinatorProtocol: AnyObject {
     func finish()
 }
 
-extension CoordinatorProtocol {
+public extension CoordinatorProtocol {
     func finish() {
         var viewControllers = navigationController.viewControllers
         childControllers.forEach { viewController in viewControllers.removeAll { $0 === viewController } }

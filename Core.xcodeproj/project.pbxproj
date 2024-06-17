@@ -11,7 +11,7 @@
 		B741CCFC2C20B563008FEE72 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741CCFB2C20B563008FEE72 /* CoreTests.swift */; };
 		B741CCFD2C20B563008FEE72 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B741CCEF2C20B563008FEE72 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B741CD072C20B5E3008FEE72 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741CD062C20B5E3008FEE72 /* CoordinatorProtocol.swift */; };
-		B741CD092C20B606008FEE72 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741CD082C20B606008FEE72 /* Core.swift */; };
+		B741CD092C20B606008FEE72 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741CD082C20B606008FEE72 /* Shared.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		B741CCF62C20B563008FEE72 /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B741CCFB2C20B563008FEE72 /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
 		B741CD062C20B5E3008FEE72 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		B741CD082C20B606008FEE72 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		B741CD082C20B606008FEE72 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			children = (
 				B741CCEF2C20B563008FEE72 /* Core.h */,
 				B741CD062C20B5E3008FEE72 /* CoordinatorProtocol.swift */,
-				B741CD082C20B606008FEE72 /* Core.swift */,
+				B741CD082C20B606008FEE72 /* Shared.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B741CD092C20B606008FEE72 /* Core.swift in Sources */,
+				B741CD092C20B606008FEE72 /* Shared.swift in Sources */,
 				B741CD072C20B5E3008FEE72 /* CoordinatorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

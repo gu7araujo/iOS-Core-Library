@@ -1,5 +1,5 @@
 //
-//  Core.swift
+//  Shared.swift
 //  Core
 //
 //  Created by Gustavo Araujo Santos on 17/06/24.
@@ -8,10 +8,10 @@
 import Foundation
 import Combine
 
-final class Core {
+public final class Shared {
     
-    static var shared = Core()
-    @Published var badgeValue: Int = 0
+    public static var shared = Shared()
+    @Published public var badgeValue: Int = 0
     
     private init() { }
 }

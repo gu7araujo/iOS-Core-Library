@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B741CCF12C20B563008FEE72 /* Core.docc in Sources */ = {isa = PBXBuildFile; fileRef = B741CCF02C20B563008FEE72 /* Core.docc */; };
 		B741CCF72C20B563008FEE72 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B741CCEC2C20B563008FEE72 /* Core.framework */; };
 		B741CCFC2C20B563008FEE72 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741CCFB2C20B563008FEE72 /* CoreTests.swift */; };
 		B741CCFD2C20B563008FEE72 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B741CCEF2C20B563008FEE72 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		B741CCEC2C20B563008FEE72 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B741CCEF2C20B563008FEE72 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
-		B741CCF02C20B563008FEE72 /* Core.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Core.docc; sourceTree = "<group>"; };
 		B741CCF62C20B563008FEE72 /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B741CCFB2C20B563008FEE72 /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
 		B741CD062C20B5E3008FEE72 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				B741CCEF2C20B563008FEE72 /* Core.h */,
-				B741CCF02C20B563008FEE72 /* Core.docc */,
 				B741CD062C20B5E3008FEE72 /* CoordinatorProtocol.swift */,
 				B741CD082C20B606008FEE72 /* Core.swift */,
 			);
@@ -202,7 +199,6 @@
 			files = (
 				B741CD092C20B606008FEE72 /* Core.swift in Sources */,
 				B741CD072C20B5E3008FEE72 /* CoordinatorProtocol.swift in Sources */,
-				B741CCF12C20B563008FEE72 /* Core.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

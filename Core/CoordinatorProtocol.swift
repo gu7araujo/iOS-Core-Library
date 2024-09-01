@@ -20,7 +20,6 @@ public protocol CoordinatorProtocol: AnyObject {
     var finishDelegate: CoordinatorFinishDelegate? { get set }
     var navigationController: UINavigationController { get set }
     var childCoordinators: [CoordinatorProtocol] { get set }
-    var childControllers: [UIViewController] { get set }
     var parentCoordinator: CoordinatorProtocol? { get set }
     var type: CoordinatorType { get }
     
@@ -32,17 +31,16 @@ public protocol CoordinatorProtocol: AnyObject {
 
 public extension CoordinatorProtocol {
     func finish() {
-        var viewControllers = navigationController.viewControllers
-        childControllers.forEach { viewController in viewControllers.removeAll { $0 === viewController } }
-        
-        if let lastViewController = viewControllers.last {
-            navigationController.popToViewController(lastViewController, animated: true)
-        }
-        
-        childControllers.removeAll()
+        navigationController.popToRootViewController(animated: true)
         childCoordinators.removeAll()
         parentCoordinator = nil
         finishDelegate?.coordinatorDidFinish(childCoordinator: self)
     }
+    
+    func popToSpecificViewController<T: UIViewController>(ofType type: T.Type, animated: Bool) {
+        let viewControllers = navigationController.viewControllers
+        if let targetViewController = viewControllers.last(where: { $0 is T }) {
+            navigationController.popToViewController(targetViewController, animated: animated)
+        }
+    }
 }
-
